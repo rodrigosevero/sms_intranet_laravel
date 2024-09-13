@@ -1,0 +1,186 @@
+:root {
+  --c_green: #007D2A;
+  --c_darkgreen: #16612e;
+  --c_darkgreen2: #0f5224;
+  --c_gray: #eaeaea;
+  --c_darkgray: #5f5f5f;
+  --c_light_gray: #6c757d;
+  --c_black: black;
+}
+body {}
+.nav1 {
+  background-color: var(--c_darkgreen);
+  margin-bottom: 0;
+  padding: 0.8rem 0rem 0.8rem 0rem;
+}
+.nav2 {
+  background-color: var(--c_gray);
+}
+.min-header {
+  padding-left: 0.4rem;
+}
+
+.min-header span {
+    color: #fff;
+    font-size: 0.7rem;
+}
+.min-header-links {
+  float: right;
+}
+.min-header-links li {
+  color: white;
+  font-size: 0.7rem;
+}
+.mainheader {
+  background-color: var(--c_green);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.mainheader p:last-child {
+  margin-bottom: 0;
+}
+
+.mainheader-heading {
+  font-weight: 300;
+}
+.section {
+  padding: 0rem 0 1rem 0;
+}
+.right_sidespace {
+  display: inline;
+}
+.nopadding{
+  padding: 0px;
+}
+.giant {
+  font-size: 5rem;
+}
+.spacer {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #fff;
+}
+#telefones_wrapper .row {
+  width: 100% !important;
+}
+.default-header {
+  background-color: var(--c_gray);
+  padding: 0.7rem 0rem 0.7rem 1rem;
+  border-bottom: solid 2px #c3c3c3;
+  border-radius: 3px;
+}
+.ac-rapido {
+   text-align: center;
+   margin-bottom: 10px;
+}
+.ac-rapido .fa, .ac-rapido .far, .ac-rapido .fas {
+  font-size: 1.3rem;
+}
+
+.ac-rapido a {
+  color: var(--c_light_gray);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.ac-rapido a:hover {
+  color: black;
+}
+
+#comunicados a, #eventos a {
+  color: var(--c_darkgray);
+  font-weight: bold;
+}
+
+#monitoramento .sisblock {
+  padding-bottom: 0.6rem;
+}
+
+.bottom-mg10 {
+  margin-bottom: 10px;
+}
+.card-div {
+  height: 100px;
+  overflow: hidden;
+}
+
+.news-formater img {
+  padding: 0rem 0rem 0.7rem 0rem;
+}
+.news-formater {
+  font-size: 1.1rem;
+  letter-spacing: -.6px;
+  line-height: 1.50;
+  overflow-wrap: break-word;
+}
+.blink_it {
+  animation: blinker 2s linear infinite;
+}
+
+.icon_green {
+  color: green;
+}
+.icon_red {
+  color: #ea0000;
+}
+.icon_yellow {
+  color: #ffa700;
+}
+
+#map {
+  height: 600px;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.search-box {
+
+}
+.pad-list {
+  padding-top: 4.5%;
+}
+.search-box {
+  background-color: var(--c_gray);
+  padding: 1rem 1rem 1rem 1rem;
+  float: left;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.site-map ul li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.footer-list {
+
+}
+.footer-list ul {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+.footer-list li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.footer-list h5 {
+  font-weight: 900;
+}
+footer {
+  padding-top: 2rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+.mainfooter {
+  background-color: var(--c_darkgreen);
+}
+.subfooter {
+  margin-top: 2rem;
+  padding: 0.3rem 0 0.3rem 0;
+  background-color: var(--c_darkgreen2);
+}
