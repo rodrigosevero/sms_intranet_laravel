@@ -29,6 +29,7 @@ class SistemaAdminController extends Controller
     public function create()
     {
       	$status = Statu::all();
+        // dd($status);
         return view('admin.sistemas.criar', compact('status'), array('user' => Auth::user()));
     }
 

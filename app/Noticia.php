@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Noticia extends Model
 {
 
-	protected $table = 'intranet_noticias';
+	protected $table = 'noticias';
 
     protected $fillable = [
     	'titulo', 'descricao', 'foto', 'texto', 'user_id', 'status_id',   	

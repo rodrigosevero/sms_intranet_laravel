@@ -8,7 +8,7 @@ class Documentacao extends Model
 {
 
 
-	protected $table = 'intranet_documentacoes';
+	protected $table = 'documentacoes';
 	
     protected $fillable = [
     	'titulo', 'arquivo', 'video', 'sistemas_id', 'tipo_documentacoes_id', 'user_id', 'status_id',   	
