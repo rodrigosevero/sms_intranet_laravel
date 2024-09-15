@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class TipoUnidade extends Model
 {
 
-	protected $table = 'intranet_tipo_unidades';
+	protected $table = 'tipo_unidades';
 	
     protected $fillable = [
     	'nome', 'icone', 'status_id',

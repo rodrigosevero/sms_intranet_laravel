@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class RegionalUnidade extends Model
 {
 	//Define name manually
-	protected $table = 'intranet_regional_unidades';
+	protected $table = 'regional_unidades';
     
     protected $fillable = [
     	'nome'

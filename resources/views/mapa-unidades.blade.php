@@ -49,7 +49,7 @@ center: {lat: -34.397, lng: 150.644},
 <div class="col-md-12 col-12">
    
 
-<h5 class="default-header"><i class="fas fa-hospital"></i> UNIDADES DE SAÚDE <i class="fas fa-arrow-right"></i> <i>MAPA DE UNIDADES</i></h5>
+<h5 class="default-header"><i class="fas fa-hospital"></i> Unidades <i class="fas fa-arrow-right"></i> <i>MAPA DE UNIDADES</i></h5>
 
 
 <div id="load-map" class="col s12 white content-holder"> <!-- google maps -->

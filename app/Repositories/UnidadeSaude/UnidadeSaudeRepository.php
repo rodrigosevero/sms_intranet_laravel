@@ -18,9 +18,9 @@ class UnidadeSaudeRepository implements UnidadeSaudeInterface
 
 	public function listAll($unidade)
 	{
-	    return  $unidadessaude = UnidadeSaude::where('status_id', '1')->whereNotNull('latitude')->whereNotNull('longitude')->where('nome', 'ILIKE', '%'. $unidade.'%')
-	    	->orWhere('nome2', 'ILIKE', '%'. $unidade.'%')
-	    	->orWhere('nome3', 'ILIKE', '%'. $unidade.'%')
+	    return  $unidadessaude = UnidadeSaude::where('status_id', '1')->whereNotNull('latitude')->whereNotNull('longitude')->where('nome', 'LIKE', '%'. $unidade.'%')
+	    	->orWhere('nome2', 'LIKE', '%'. $unidade.'%')
+	    	->orWhere('nome3', 'LIKE', '%'. $unidade.'%')
 	    	->orderBy('id', 'desc')->with('tipounidade')->paginate(12);
 	}
 

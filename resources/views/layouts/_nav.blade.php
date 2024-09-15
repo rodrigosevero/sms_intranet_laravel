@@ -22,7 +22,7 @@
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        UNIDADES DE SAÚDE
+                        Unidades
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                            <a class="dropdown-item {{{ (Request::is('unidades-de-saude/lista-de-unidades') ? 'active' : '') }}}" href="{{ url('/unidades-de-saude/lista-de-unidades') }}">LISTA DE UNIDADES</a>

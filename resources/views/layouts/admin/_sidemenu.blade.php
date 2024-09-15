@@ -41,13 +41,13 @@
           <a href="{{ url('admin/eventos')}}"><i class="fas fa-calendar-alt"></i> <span>EVENTOS</span></a></li>
 
 <!--          <li  class="{{{ (Request::is('admin/unidades-de-saude') ? 'active' : '') }}}">
-          <a href="{{ url('admin/unidades-de-saude')}}"><i class="fas fa-hospital"></i> <span>UNIDADES DE SAÚDE</span></a></li>
+          <a href="{{ url('admin/unidades-de-saude')}}"><i class="fas fa-hospital"></i> <span>Unidades</span></a></li>
 
  -->
           <li class="{{{ (Request::is('admin/unidades-de-saude') ? 'active' : '') }}} treeview">
           <a href="#">
           <i class="fas fa-hospital"></i>
-          <span>UNIDADES DE SAÚDE</span>
+          <span>Unidades</span>
           <span class="pull-right-container">
           <i class="fa fa-angle-left pull-right"></i>
           </span>

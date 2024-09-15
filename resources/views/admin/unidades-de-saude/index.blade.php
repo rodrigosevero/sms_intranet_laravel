@@ -26,11 +26,11 @@
 @section('content')
 <section class="content-header">
 <h1>
-Unidades de Saúde/Setor
+Unidades/Setor
 </h1>
 <ol class="breadcrumb">
 <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-<li class="active">Unidades de Saúde/Setor</li>
+<li class="active">Unidades/Setor</li>
 </ol>
 </section>
 

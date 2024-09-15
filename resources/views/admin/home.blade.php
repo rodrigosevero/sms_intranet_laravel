@@ -13,7 +13,7 @@ Dashboard
 
 <!-- Main content -->
 <section class="content">
-	dwadwa
+	Unidades
 </section>
 </div>
 <!-- @if (session('status'))

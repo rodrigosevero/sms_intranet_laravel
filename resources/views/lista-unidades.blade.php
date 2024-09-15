@@ -2,7 +2,7 @@
 @section('content')
 <div class="row">
    <div class="col-md-8 col-12">
-      <h5 class="default-header"><i class="fas fa-hospital"></i> UNIDADES DE SAÚDE <i class="fas fa-arrow-right"></i> <i>LISTA DE UNIDADES</i></h5>
+      <h5 class="default-header"><i class="fas fa-hospital"></i> Unidades <i class="fas fa-arrow-right"></i> <i>LISTA DE UNIDADES</i></h5>
       <div class="search-box">
          <form method="GET" action="{{ route('unidades-de-saude.lista-de-unidades') }}" enctype="multipart/form-data">
             <div class="form-group">

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class TipoDownload extends Model
 {
 
-    protected $table = 'intranet_tipo_downloads';
+    protected $table = 'tipo_downloads';
 
     protected $fillable = [
     	'nome', 'user_id', 'status_id',   	

@@ -3,7 +3,7 @@
       <div class="row">
          <div class="col-md-8 col-12">
             <div class="min-header">
-               <span class="right_sidespace"><i class="fas fa-home"></i> VOCÊ ESTÁ NA <b>INTRANET</b> DA SECRETARIA MUNICIPAL DE SAÚDE. </span>
+               <span class="right_sidespace"><i class="fas fa-home"></i> VOCÊ ESTÁ NA <b>INTRANET</b> DA PREFEITURA MUNICIPAL DE VÁRZEA GRANDE. </span>
                            
             </div>
          </div>
@@ -30,7 +30,7 @@
       <div class="row">
          <div class="col-md-4 col-12">
             <a href="{{ url('/') }}">
-            <img src="{{ asset('img/main-logo.png') }}">
+            <img width="250px" src="{{ asset('img/main-logo.png') }}">
             </a>
          </div>
          <div class="col-md-8 col-12">

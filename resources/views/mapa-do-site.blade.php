@@ -16,7 +16,7 @@
 		<li><a class="text-dark" href="/noticias"><strong>Notícias</strong></a></li>   
 		<li><a class="text-dark" href="/comunicados"><strong>Comunicados</strong></a></li> 
 		<li><a class="text-dark" href="/eventos"><strong>Eventos</strong></a></li>  
-		<li><a class="text-dark" href="#"><strong>Unidades de Saúde</strong></a></li>
+		<li><a class="text-dark" href="#"><strong>Unidades</strong></a></li>
 		<ul>
 		<li><a class="text-dark" href="/unidades-de-saude/lista-de-unidades">Lista de Unidades</a></li>
 		<li><a class="text-dark" href="/unidades-de-saude/mapa-de-unidades">Mapa de Unidades</a></li>

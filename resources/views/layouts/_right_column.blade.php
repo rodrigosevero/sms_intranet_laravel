@@ -2,7 +2,7 @@
 <!-- acesso rapido -->
 <h5 class="default-header"><i class="far fa-folder-open"></i> ACESSO RÁPIDO</h5>
 <div class="row section">
-   <div class="col-4 ac-rapido text-center">
+   {{-- <div class="col-4 ac-rapido text-center">
       <a href="https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/" target="_blank" class="btn btn-default">
       <i class="fa fa-envelope"></i>
       <br/>
@@ -37,7 +37,7 @@
       <i class="fas fa-phone-square"></i>
       <br/>
       TELEFONES</a>
-   </div>
+   </div> --}}
 </div>
 
 

@@ -44,31 +44,31 @@ class UnidadeSaudeController extends Controller
                 $termo = $request->input('unidade');
                 $termo2 = $request->input('regional');
 
-                $unidades = DB::table('intranet_unidade_saudes')
-               ->select('intranet_unidade_saudes.id AS unidade_id',
-                  'intranet_unidade_saudes.nome AS unidade_nome',
-                  'intranet_unidade_saudes.endereco AS unidade_endereco',
-                  'intranet_unidade_saudes.telefone AS unidade_telefone',
-                  'intranet_unidade_saudes.foto AS unidade_foto',
-                  'intranet_unidade_saudes.latitude AS unidade_latitude',
-                  'intranet_unidade_saudes.longitude AS unidade_longitude',
-                  'intranet_tipo_unidades.nome AS unidade_tipo',
-                  'intranet_tipo_unidades.icone AS unidade_icone',
-                  'intranet_regional_unidades.nome AS unidade_regional')
-                  ->join('intranet_tipo_unidades', 'intranet_tipo_unidades.id', '=', 'intranet_unidade_saudes.tipounidade_id')
-                  ->join('intranet_regional_unidades', 'intranet_regional_unidades.id', '=', 'intranet_unidade_saudes.regionalunidade_id')
-                  ->where('intranet_unidade_saudes.status_id', '=', '1')
-                  ->whereNotNull('intranet_unidade_saudes.latitude')
-                  ->whereNotNull('intranet_unidade_saudes.longitude');
+                $unidades = DB::table('unidade_saudes')
+               ->select('unidade_saudes.id AS unidade_id',
+                  'unidade_saudes.nome AS unidade_nome',
+                  'unidade_saudes.endereco AS unidade_endereco',
+                  'unidade_saudes.telefone AS unidade_telefone',
+                  'unidade_saudes.foto AS unidade_foto',
+                  'unidade_saudes.latitude AS unidade_latitude',
+                  'unidade_saudes.longitude AS unidade_longitude',
+                  'tipo_unidades.nome AS unidade_tipo',
+                  'tipo_unidades.icone AS unidade_icone',
+                  'regional_unidades.nome AS unidade_regional')
+                  ->join('tipo_unidades', 'tipo_unidades.id', '=', 'unidade_saudes.tipounidade_id')
+                  ->join('regional_unidades', 'regional_unidades.id', '=', 'unidade_saudes.regionalunidade_id')
+                  ->where('unidade_saudes.status_id', '=', '1')
+                  ->whereNotNull('unidade_saudes.latitude')
+                  ->whereNotNull('unidade_saudes.longitude');
                   if($termo){
-                    $unidades->where('intranet_unidade_saudes.nome', 'ILIKE',  '%' . $termo . '%')
-                    ->orWhere('nome2', 'ILIKE', '%'. $termo.'%')
-                    ->orWhere('nome3', 'ILIKE', '%'. $termo.'%');
+                    $unidades->where('unidade_saudes.nome', 'LIKE',  '%' . $termo . '%')
+                    ->orWhere('nome2', 'LIKE', '%'. $termo.'%')
+                    ->orWhere('nome3', 'LIKE', '%'. $termo.'%');
                   }
                   if($termo2){
-                    $unidades->where('intranet_unidade_saudes.regionalunidade_id', '=', ''.$termo2.'');
+                    $unidades->where('unidade_saudes.regionalunidade_id', '=', ''.$termo2.'');
                   }
-                  $unidades->orderBy('intranet_unidade_saudes.nome', 'ASC');
+                  $unidades->orderBy('unidade_saudes.nome', 'ASC');
                   $unidades = $unidades->get();
 
                   $uniCount = $unidades->count();
