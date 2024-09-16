@@ -46,6 +46,7 @@ class TipoUnidadesSaudeAdminController extends Controller
 
         $tipo_unidade = new TipoUnidade;
         $tipo_unidade->nome = $request->input('nome');
+        $tipo_unidade->user_id = Auth::user()->id;
         $tipo_unidade->icone = $filename;
         $tipo_unidade->status_id = $request->input('status_id');
         $tipo_unidade->save();

@@ -39,7 +39,7 @@ class UnidadesSaudeAdminController extends Controller
     {	
         request()->validate([
             'nome' => 'required|string|max:255',
-            'regionalunidade' => 'required|int',
+            // 'regionalunidade' => 'required|int',
             'tipounidade' => 'required|int',
             'status_id' => 'required|int',
         ]);
@@ -89,7 +89,7 @@ class UnidadesSaudeAdminController extends Controller
     {
         request()->validate([
             'nome' => 'required|string|max:255',
-            'regionalunidade' => 'required|int',
+            // 'regionalunidade' => 'required|int',
             'tipounidade' => 'required|int',
             'status_id' => 'required|int',
         ]);
