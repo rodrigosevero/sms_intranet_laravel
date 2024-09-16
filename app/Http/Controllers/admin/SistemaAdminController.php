@@ -90,13 +90,13 @@ class SistemaAdminController extends Controller
         request()->validate([
             'nome' => 'required|string|max:255',
             'descricao' => 'required|string|min:10',
-            'foto' => 'mimes:jpeg,jpg|max:2000',
+            'foto' => 'mimes:jpeg,jpg,png|max:2000',
             'link' => 'required|string|min:10',
             'status_id' => 'required|int',
         ]);
 
         $sistema = Sistema::find($id);
-
+        
         if($request->hasFile('foto') and $sistema->foto){
 
             File::delete(public_path('/storage/sistemas/' . $sistema->foto )); 
@@ -108,6 +108,7 @@ class SistemaAdminController extends Controller
                 $constraint->aspectRatio();
             })->save( public_path('/storage/sistemas/' . $filename) );
             $sistema->foto = $filename;
+            
         }
 
         $sistema->nome = $request->input('nome');
