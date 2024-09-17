@@ -47,6 +47,11 @@ return [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
+        
+        'fileolh' => [
+            'driver' => 'fileolh',
+            'root' => storage_path('app/fileolh'),
+        ],
 
         'public' => [
             'driver' => 'local',
